@@ -40,7 +40,7 @@
 /**
  * mapやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "玉田"];
+// const nameArr = ["田中", "山田", "玉田"];
 // const nameArr2 = nameArr.map((name) => {
 //   return name;
 // });
@@ -54,11 +54,32 @@ const nameArr = ["田中", "山田", "玉田"];
 // });
 // console.log(newnumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name === "玉田") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "玉田") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArr);
+/**
+ * 参考演算子
+ */
+//ある条件　? true : false
+// const num = 1300;
+// console.log(num.toLocaleString());
+
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 60));
+
+//||は左側がfalseなら右側を返す
+// const num = 100;
+// const fee = num || "金額は未設定です";
+// console.log(fee);
+
+//＆＆は左側がtrueなら右側を返す
+const num2 = 100;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
